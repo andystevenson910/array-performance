@@ -5,6 +5,7 @@
 #include <vector>
 #include <cstddef>
 #include <cstdint>
+#include <string>
 
 // Constants
 const std::size_t HOW_MANY_ELEMENTS = 250000;
