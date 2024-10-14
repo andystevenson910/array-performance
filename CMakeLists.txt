@@ -6,6 +6,10 @@ project(ArrayPerformance)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+if(CMAKE_COMPILER_IS_GNUXX)
+	add_compile_options(-Wall -Wextra -pedantic)
+endif()
+
 # Add executable for main application
 add_executable(ArrayPerformance main.cpp sortutils.cpp)
 
